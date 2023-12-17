@@ -1,4 +1,4 @@
-package com.barbearia.api.infra;
+package com.barbearia.api.infra.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;

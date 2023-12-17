@@ -12,7 +12,7 @@ create table clientes(
     uf char(2) not null,
     cidade varchar(100) not null,
     telefone varchar(20) not null,
-    ativo smallint not null,
+    ativo BOOLEAN not null,
 
     primary key(id)
 
