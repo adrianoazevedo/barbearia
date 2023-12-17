@@ -1,0 +1,1 @@
+alter table barbeiros add telefone varchar(20) not null;
