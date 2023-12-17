@@ -42,7 +42,9 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 
 ---
 
-## 📝 Licença MIT
+## 📝 Usuário de Teste
 
+- login: teste@gmail.com
+- senha: 123456
 
 ---
