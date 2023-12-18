@@ -66,3 +66,9 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - tempo de vida do token: 2hs
 
 ---
+
+## 📝 Collection Postman
+![Collection](https://github.com/adrianoazevedo/barbearia/blob/main/assets/postman.png "Json collection")
+
+---
+
