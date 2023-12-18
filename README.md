@@ -10,12 +10,15 @@ Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o
 
 - [x] CRUD de barbeiros;
 - [x] CRUD de clientes;
-- [x] Agendamento de Atendimentos;
-- [x] Cancelamento de Atendimentos.
+- [ ] Agendamento de Atendimentos;
+- [ ] Cancelamento de Atendimentos.
 - [x] Validação de Cadastros, Agendamento e Cancelamento.
 - [x] Controle de Autorização de Acesso por token JWT c/ persistência.
 - [x] Docker com Postgres e PGAdmin.
 - [x] Data migrations com versionamento usando o Flyway
+- [ ] Documentação da API 
+- [ ] Testes Automatizados com JUnit
+- [ ] Build do projeto e deploy em produção
 
 ---
 
