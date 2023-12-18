@@ -1,17 +1,17 @@
 INSERT INTO barbeiros (nome,email,cpf,telefone,especialidade,logradouro,bairro,cep,complemento,numero,uf,cidade,ativo)
 VALUES
-    ('Branden da Cruz','brandendacruz6368@yahoo.com','265599556-58','(05)72044-3738','CRIANÇA','Rua Ricardo Catanhede','Alphagado','67477-652','Casa B','872','AL','Três Lagoas',true),
+    ('Branden da Cruz','brandendacruz6368@yahoo.com','265599556-58','(05)72044-3738','CRIANCA','Rua Ricardo Catanhede','Alphagado','67477-652','Casa B','872','AL','Três Lagoas',true),
     ('Bethany Reis','bethanyreis@yahoo.com','792152395-74','(77)56598-5161','CABELO','Rua dos Guaranás','Barralândia','45437-435','Primeiro Andar','778','PI','Salvador',true),
-    ('Amena Barros','amenabarros@gmail.com','717174635-23','(07)73656-6884','CRIANÇA','Rua Virgílio Maurício da Rocha','Vila do Chaves','81151-439','Casa B','165','PI','Fazenda Rio Grande',true),
+    ('Amena Barros','amenabarros@gmail.com','717174635-23','(07)73656-6884','CRIANCA','Rua Virgílio Maurício da Rocha','Vila do Chaves','81151-439','Casa B','165','PI','Fazenda Rio Grande',true),
     ('Wanda Feitosa','wandafeitosa@gmail.com','574470869-01','(19)38725-1572','CABELO','Rua Iraque','Itaigara Disney','81293-234','Casa B','550','MG','Arraial do Cabo',true),
     ('Daquan da Cruz','daquandacruz@gmail.com','864257217-84','(43)20161-3731','CABELO','Travessa Onze de Novembro','Ipanema','92118-677','Fundo','047','PE','Salvador',true),
-    ('Gillian Menezes','gillianmenezes@yahoo.com','234685536-59','(44)43642-3362','ESTÉTICA','Rua Deia','Alto do Castelo','88736-211','AP101','735','PI','Porto Seguro',true),
+    ('Gillian Menezes','gillianmenezes@yahoo.com','234685536-59','(44)43642-3362','ESTETICA','Rua Deia','Alto do Castelo','88736-211','AP101','735','PI','Porto Seguro',true),
     ('Nasim Oliveira','nasimoliveira@yahoo.com','849977424-34','(83)13902-6624','BARBA','Rua São João Batista','Vila do Chaves','20065-021','Segundo Andar','151','SP','São Paulo',true),
     ('Dorian Barros','dorianbarros@gmail.com','543918541-36','(18)26425-1748','BARBA','Travessa São Sebastião','Vila Maria','36247574','Segundo Andar','129','MA','Porto Seguro',true),
-    ('Levi Silveira','levisilveira@gmail.com','211680498-44','(48)47672-1288','ESTÉTICA','Rua Deia','Alto do Castelo','65813-735','AP105','423','AC','Cuiabá',true),
+    ('Levi Silveira','levisilveira@gmail.com','211680498-44','(48)47672-1288','ESTETICA','Rua Deia','Alto do Castelo','65813-735','AP105','423','AC','Cuiabá',true),
     ('Dennis Fonseca','dennisfonseca4903@yahoo.com','026898175-24','(55)27717-5292','CABELO','Rua Ulisses Guimarães','Itaigara Disney','65546-171','Fundo','878','MG','Arraial do Cabo',true),
     ('Sonia Evangelista','soniaevangelista@yahoo.com','275774067-81','(81)41444-7616','BARBA','Rua Virgílio Maurício da Rocha','Itapuã','31651878','Segundo Andar','355','MS','Salvador',true),
-    ('Cherokee de Santana','cherokeedesantana@yahoo.com','766738234-42','(15)12885-4315','ESTÉTICA','Rua Iraque','Barralândia','26467-388','AP301','656','AL','Salvador',true);
+    ('Cherokee de Santana','cherokeedesantana@yahoo.com','766738234-42','(15)12885-4315','ESTETICA','Rua Iraque','Barralândia','26467-388','AP301','656','AL','Salvador',true);
 
 INSERT INTO clientes (nome,email,cpf,telefone,logradouro,bairro,cep,complemento,numero,uf,cidade,ativo)
 VALUES
