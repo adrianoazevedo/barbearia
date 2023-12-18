@@ -10,8 +10,12 @@ Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o
 
 - [x] CRUD de barbeiros;
 - [x] CRUD de clientes;
-- [ ] Agendamento de atendimentos (em breve);
-- [ ] Cancelamento de atendimentos (em breve);
+- [x] Agendamento de Atendimentos;
+- [x] Cancelamento de Atendimentos.
+- [x] Validação de Cadastros, Agendamento e Cancelamento.
+- [x] Controle de Autorização de Acesso por token JWT c/ persistência.
+- [x] Docker com Postgres e PGAdmin.
+- [x] Data migrations com versionamento usando o Flyway
 
 ---
 
@@ -46,5 +50,19 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 
 - login: teste@gmail.com
 - senha: 123456
+
+---
+
+## 📝 Instruções para rodar o projeto
+
+- baixar projeto
+- abrir no intelliJ
+- aguarde o intelliJ baixar todas as dependências
+- RUN o file compose.yaml (postgres e pgadmin no docker)
+- RUN o ApiApplication, na pasta java/com.barbearia.api
+- importe o collection postman
+- utilize a request efetuar login, com as credenciais acima, para gerar um token JWT
+- atualize o token em Authorization (tipo Bearer Token) com o gerado
+- tempo de vida do token: 2hs
 
 ---
