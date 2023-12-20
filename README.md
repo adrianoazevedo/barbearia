@@ -1,6 +1,6 @@
 ## 💻 Sobre o projeto
 
-A Barbearia é empresa fictícia que precisa de um aplicativo para gestão de atendimento de clientes. O aplicativo deve possuir funcionalidades que permitam o cadastro de barbeiros e de clientes, e também o agendamento e cancelamento de atendimento.
+O App Barbearia é um aplicativo para gestão de atendimento de clientes e barbeiros. O aplicativo deve possuir funcionalidades que permitam o cadastro de barbeiros e de clientes, e também o agendamento e cancelamento de atendimento.
 
 Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o nosso será responsável pelo desenvolvimento das APIs Rest utilizando Spring.
 
