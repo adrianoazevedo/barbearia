@@ -4,5 +4,5 @@ public enum MotivoCancelamento {
 
     CLIENTE_DESISTIU,
     BARBEIRO_CANCELOU,
-    OUTROS;
+    OUTROS
 }
