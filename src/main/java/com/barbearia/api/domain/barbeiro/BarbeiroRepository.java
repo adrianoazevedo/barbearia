@@ -22,10 +22,20 @@ public interface BarbeiroRepository extends JpaRepository<Barbeiro, Long> {
                             select a.barbeiro.id from Atendimento a
                             where
                             a.data = :data
+                            and
+                            a.motivoCancelamento is null
                     )
                     order by rand()
                     limit 1
 
             """)
     Barbeiro escolherBarbeiroAleatorioLivreNaData(Especialidade especialidade, LocalDateTime data);
+
+    @Query("""
+            select b.ativo
+            from Barbeiro b
+            where
+            b.id = :id
+            """)
+    Boolean findAtivoById(Long id);
 }

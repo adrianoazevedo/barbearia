@@ -21,8 +21,9 @@ public class AtendimentoController {
     @Transactional
     public ResponseEntity agendar(@RequestBody @Valid DadosAgendamentoAtendimento dados){
 
-        agenda.agendar(dados);
-        return ResponseEntity.ok(new DadosDetalhamentoAtendimento(null, null, null, null));
+        var dto = agenda.agendar(dados);
+//        return ResponseEntity.ok(new DadosDetalhamentoAtendimento(null, null, null, null));
+        return ResponseEntity.ok(dto);
     }
 
     @DeleteMapping
