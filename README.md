@@ -10,15 +10,21 @@ Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o
 
 - [x] CRUD de barbeiros;
 - [x] CRUD de clientes;
-- [ ] Agendamento de Atendimentos;
-- [ ] Cancelamento de Atendimentos.
+- [x] Agendamento de Atendimentos;
+- [x] Cancelamento de Atendimentos.
 - [x] Validação de Cadastros, Agendamento e Cancelamento.
 - [x] Controle de Autorização de Acesso por token JWT c/ persistência.
 - [x] Docker com Postgres e PGAdmin.
 - [x] Data migrations com versionamento usando o Flyway
-- [ ] Documentação da API 
+- [x] Documentação da API c/ Swagger
 - [ ] Testes Automatizados com JUnit
 - [ ] Build do projeto e deploy em produção
+
+---
+
+## 📄 SpringDoc/Swagger
+
+Implementação da documentação e acessos aos endpoints <a href="http://localhost:8080/v3/api-docs">Json</a> / <a href="http://localhost:8080/swagger-ui/index.html">HTML</a>
 
 ---
 

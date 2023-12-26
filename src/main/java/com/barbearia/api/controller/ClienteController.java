@@ -1,5 +1,6 @@
 package com.barbearia.api.controller;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import com.barbearia.api.domain.cliente.Cliente;
 import com.barbearia.api.domain.cliente.ClienteRepository;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("clientes")
+@SecurityRequirement(name = "bearer-key")
 public class ClienteController {
 
     @Autowired

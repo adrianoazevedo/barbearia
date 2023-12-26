@@ -1,5 +1,6 @@
 package com.barbearia.api.controller;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import com.barbearia.api.domain.barbeiro.DadosListagemBarbeiro;
 import com.barbearia.api.domain.barbeiro.Barbeiro;
@@ -16,6 +17,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("barbeiros")
+@SecurityRequirement(name = "bearer-key")
 public class BarbeiroController {
 
     @Autowired
