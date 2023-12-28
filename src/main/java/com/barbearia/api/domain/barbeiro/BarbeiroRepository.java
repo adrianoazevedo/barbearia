@@ -25,7 +25,7 @@ public interface BarbeiroRepository extends JpaRepository<Barbeiro, Long> {
                             and
                             a.motivoCancelamento is null
                     )
-                    order by rand()
+                    order by (random() * 10 + 1)
                     limit 1
 
             """)
