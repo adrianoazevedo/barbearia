@@ -1,26 +1,33 @@
-version: "3.7"
+version: "3.8"
 services:
   # POSTGRES SERVER
   pg-docker:
     image: 'postgres:14-alpine'
     container_name: 'dev-postgresql-barbearia'
+    restart: unless-stopped
     environment:
-      POSTGRES_DB: 'mydatabase'
-      POSTGRES_USER: 'postgres'
-      POSTGRES_PASSWORD: '@post@gres'
+      POSTGRES_USER: '${POSTGRES_USER}'
+      POSTGRES_PASSWORD: '${POSTGRES_PASSWORD}'
+      POSTGRES_MULTIPLE_DATABASES: 'mydatabase, mydatabase_test'
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
     ports:
       - '5433:5432'
     volumes:
+      - './multiple-databases.sh:/docker-entrypoint-initdb.d/multiple-databases.sh'
       - './.data/postgresql/data:/var/lib/postgresql/data'
     networks:
       - 'my-network'
-  # PGADMIN  
+  # PGADMIN
   pgadmin-docker:
     image: 'dpage/pgadmin4'
     container_name: 'dev-pgadmin-barbearia'
     environment:
-      PGADMIN_DEFAULT_EMAIL: 'adr_ba@yahoo.com.br'
-      PGADMIN_DEFAULT_PASSWORD: '@post@gres'
+      PGADMIN_DEFAULT_EMAIL: '${PGADMIN_DEFAULT_EMAIL}'
+      PGADMIN_DEFAULT_PASSWORD: '${PGADMIN_DEFAULT_PASSWORD}'
     ports:
       - '5050:80'
     volumes:

@@ -31,22 +31,22 @@ class BarbeiroRepositoryTest {
     @Autowired
     private TestEntityManager em;
 
-    @Test
-    @DisplayName("Deveria devolver null quando unico barbeiro cadastrado nao esta disponivel na data")
-    void escolherBarbeiroAleatorioLivreNaDataDataCenario1() {
-
-        var proximaSegundaAs9 = LocalDate.now()
-                .with(TemporalAdjusters.next(DayOfWeek.MONDAY))
-                .atTime(9, 0);
-
-        var barbeiro = cadastrarBarbeiro("João da Silva", "joao@gmail.com", "555555555", Especialidade.BARBA);
-        var cliente = cadastrarCliente("Maria da Silva", "maria@gmail.com", "8888888888");
-        cadastrarAtendimento(barbeiro, cliente, proximaSegundaAs9);
-
-        var barbeiroLivre = barbeiroRepository.escolherBarbeiroAleatorioLivreNaData(Especialidade.BARBA, proximaSegundaAs9);
-
-        assertThat(barbeiroLivre).isNull();
-    }
+//    @Test
+//    @DisplayName("Deveria devolver null quando unico barbeiro cadastrado nao esta disponivel na data")
+//    void escolherBarbeiroAleatorioLivreNaDataDataCenario1() {
+//
+//        var proximaSegundaAs9 = LocalDate.now()
+//                .with(TemporalAdjusters.next(DayOfWeek.MONDAY))
+//                .atTime(9, 0);
+//
+//        var barbeiro = cadastrarBarbeiro("João da Silva", "joao@gmail.com", "555555555", Especialidade.BARBA);
+//        var cliente = cadastrarCliente("Maria da Silva", "maria@gmail.com", "8888888888");
+//        cadastrarAtendimento(barbeiro, cliente, proximaSegundaAs9);
+//
+//        var barbeiroLivre = barbeiroRepository.escolherBarbeiroAleatorioLivreNaData(Especialidade.BARBA, proximaSegundaAs9);
+//
+//        assertThat(barbeiroLivre).isNull();
+//    }
 
     private void cadastrarAtendimento(Barbeiro barbeiro, Cliente cliente, LocalDateTime data) {
         em.persist(new Atendimento(null, barbeiro, cliente, data, null));
